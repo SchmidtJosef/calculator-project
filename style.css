@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+.main-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    border: 3px solid rgb(159, 159, 159);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Display */
+.result {
+    height: 70px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    word-wrap: break-word;
+}
+
+/* Clear and Delete Buttons */
+.clear-delete {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.clear-delete button {
+    width: 48%;
+    padding: 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clear-delete button:hover {
+    background-color: #c9302c;
+}
+
+/* Button Rows */
+.buttons-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Calculator Buttons */
+.square-button {
+    width: 22%;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.square-button:hover {
+    background-color: #d5d5d5;
+}
+
+/* Operator Buttons */
+.square-button:nth-child(4) {
+    background-color: #f0ad4e;
+    color: #fff;
+}
+
+.square-button:nth-child(4):hover {
+    background-color: #ec971f;
+}
+
+/* Equals Button */
+.square-button#equal {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+.square-button#equal:hover {
+    background-color: #4cae4c;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .main-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .square-button {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    .result {
+        font-size: 1.5rem;
+        height: 60px;
+    }
+}
